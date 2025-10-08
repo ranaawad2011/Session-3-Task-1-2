@@ -1,0 +1,11 @@
+
+students = [
+    {"name": "Ali", "grades": [85, 90, 80]},
+    {"name": "Lina", "grades": [75, 88, 92]},
+    {"name": "Hassan", "grades": [95, 89, 93]}
+]
+
+
+for student in students:
+    avg = sum(student["grades"]) / len(student["grades"])
+    print(f"{student['name']}'s average grade is: {avg:.2f}")

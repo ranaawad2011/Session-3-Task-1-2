@@ -1,0 +1,19 @@
+
+contacts = {
+    "Ahmed": "01012345777",
+    "Salma": "01198765777",
+    "Omar": "01234567777"
+}
+
+
+print("Contacts List:")
+for name in contacts:
+    print("-", name)
+
+
+search_name = input("\nEnter the name to search: ")
+
+if search_name in contacts:
+    print(f"{search_name}'s phone number is: {contacts[search_name]}")
+else:
+    print("Sorry, this contact is not found.")
